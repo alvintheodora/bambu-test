@@ -8,6 +8,17 @@ With a data in this repo, build an API that sends 10 potential investor similar 
     - the suggestions are sorted by descending score
     - each suggestion has a score between 0 and 1 indicating confidence in the suggestion (1 is most confident)
 
+## Alvin's Task Description
+
+- Using [express](https://expressjs.com/) as the Node.js web application framework
+- Using [babel](https://babeljs.io/) to support `import`
+- The scoring system is implemented in `utils.js` and can be described as follows:
+    - `getNameScore` using Levenshtein distance [https://en.wikipedia.org/wiki/Levenshtein_distance](https://en.wikipedia.org/wiki/Levenshtein_distance)
+    - `getNumberRangeScore` using custom min&max value for `age, latitude, longitude, monthly income`, for example `age` using min age 18 and max age 100.
+    - `getExperiencedScore` returns `1` if `experienced` is matched, otherwise returns `0`
+- Each query parameters/category has the same weight contributing to the score using the `result.score = totalScore/scoreCategory;`
+- The result will only be shown if the `score` is in the range of >=0 and <=1
+
 #### Sample responses
 
 **Match found**
