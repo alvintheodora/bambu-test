@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000
 
 const results = [];
 
-fs.createReadStream('data.csv')
+fs.createReadStream('./src/data.csv')
   .pipe(csv())
   .on('data', (data) => results.push(data))
   .on('end', () => { });
