@@ -50,7 +50,7 @@ app.get('/people-like-you', function (req, res) {
     })
 
     //sort descending based on score
-    const topResults = results.sort((a,b) => b.score-a.score).slice(0,10).filter((result)=>{return result.score >= 0 && result.score <= 1});
+    const topResults = results.sort((a,b) => b.score-a.score).slice(0,10).filter((result)=>{return result.score > 0 && result.score <= 1});
 
     res.send({ "peopleLikeYou": topResults });
   })

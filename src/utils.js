@@ -6,7 +6,8 @@ export function getExperiencedScore(experienced1, experienced2){
   
 //age, lat, lng, monthlyIncome
 export function getNumberRangeScore(value1, value2, min, max){  
-  return 1 - Math.abs((value1-value2)/(max-min));  
+  const score = 1 - Math.abs((value1-value2)/(max-min));
+  return score >=0 && score <=1?score:0;  
 }
   
 //name
