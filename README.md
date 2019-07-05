@@ -19,7 +19,23 @@ With a data in this repo, build an API that sends 10 potential investor similar 
 - Each query parameters/category has the same weight contributing to the score using the `result.score = totalScore/scoreCategory;`
 - The result will only be shown if the `score` is in the range of >=0 and <=1
 
-#### Sample responses
+## Setup - Development
+
+### **1. Clone the repository**
+
+```bash
+git clone https://github.com/alvintheodora/bambu-test.git
+cd bambu-test
+```
+
+### **2. NPM**
+
+```bash
+npm install
+npm run devStart
+```
+
+## Sample responses
 
 **Match found**
 
@@ -27,98 +43,98 @@ With a data in this repo, build an API that sends 10 potential investor similar 
 
 ```json
 {
-  "peopleLikeYou": [
-    {
-      "name": "Dorthea",
-      "age": 24,
-      "latitude": "40.7232",
-      "longitude": "19.55256",
-      "monthlyIncome": 5532,
-      "experienced": false, 
-      "score": 0.9
-    },
-    {
-      "name": "Francesco",
-      "age": 25,
-      "latitude": "40.7223",
-      "longitude": "19.55264",
-      "monthlyIncome": 5578,
-      "experienced": false,
-      "score": 0.9
-    },
-    {
-      "name": "Jarib",
-      "age": 20,
-      "latitude": "40.7232",
-      "longitude": "19.55256",
-      "monthlyIncome": 5700,
-      "experienced": true,
-      "score": 0.8
-    },
-    {
-      "name": "Merv",
-      "age": 22,
-      "latitude": "40.7233",
-      "longitude": "19.5526",
-      "monthlyIncome": 6309,
-      "experienced": true,
-      "score": 0.6
-    },
-    {
-      "name": "Jorrie",
-      "age": 19,
-      "latitude": "40.7344",
-      "longitude": "19.6200",
-      "monthlyIncome": 6488,
-      "experienced": false,
-      "score": 0.6
-    },
-    {
-      "name": "Branden",
-      "age": 27,
-      "latitude": "40.4522",
-      "longitude": "19.67011",
-      "monthlyIncome": 4312,
-      "experienced": false,
-      "score": 0.5
-    },
-    {
-      "name": "Delila",
-      "age": 30,
-      "latitude": "40.49492",
-      "longitude": "19.25686",
-      "monthlyIncome": 7340,
-      "experienced": false,
-      "score": 0.5
-    },
-    {
-      "name": "Franzen",
-      "age": 40,
-      "latitude": "40.99926",
-      "longitude": "20.55256",
-      "monthlyIncome": 7437,
-      "experienced": false,
-      "score": 0.4
-    },
-    {
-      "name": "Latrena",
-      "age": 42,
-      "latitude": "40.99232",
-      "longitude": "19.55256",
-      "monthlyIncome": 8822,
-      "experienced": true,
-      "score": 0.4
-    },
-    {
-      "name": "Ulberto",
-      "age": 37,
-      "latitude": "41.7232",
-      "longitude": "19.75256",
-      "monthlyIncome": 8129,
-      "experienced": true,
-      "score": 0.4
-    },
-  ]
+    "peopleLikeYou": [
+        {
+            "name": "Seumas",
+            "age": "23",
+            "latitude": "42.0384767",
+            "longitude": "21.5739781",
+            "monthly income": "5266",
+            "experienced": "false",
+            "score": 0.9946632135457516
+        },
+        {
+            "name": "Lulu",
+            "age": "25",
+            "latitude": "41.4410475",
+            "longitude": "22.0126949",
+            "monthly income": "5256",
+            "experienced": "false",
+            "score": 0.990087596373107
+        },
+        {
+            "name": "Orran",
+            "age": "21",
+            "latitude": "41.96571",
+            "longitude": "22.7708273",
+            "monthly income": "5290",
+            "experienced": "false",
+            "score": 0.9894834533731072
+        },
+        {
+            "name": "Gwennie",
+            "age": "21",
+            "latitude": "41.9662209",
+            "longitude": "23.0756589",
+            "monthly income": "5213",
+            "experienced": "false",
+            "score": 0.9884076524646102
+        },
+        {
+            "name": "Arlette",
+            "age": "22",
+            "latitude": "44.2682727",
+            "longitude": "19.8906547",
+            "monthly income": "5999",
+            "experienced": "false",
+            "score": 0.9875641706522398
+        },
+        {
+            "name": "Jeddy",
+            "age": "25",
+            "latitude": "38.0329785",
+            "longitude": "23.831904",
+            "monthly income": "5305",
+            "experienced": "false",
+            "score": 0.9874763796835644
+        },
+        {
+            "name": "Trudi",
+            "age": "21",
+            "latitude": "40.2259198",
+            "longitude": "21.8296162",
+            "monthly income": "6005",
+            "experienced": "false",
+            "score": 0.9873783044155907
+        },
+        {
+            "name": "Dex",
+            "age": "21",
+            "latitude": "44.9794968",
+            "longitude": "19.6209662",
+            "monthly income": "5760",
+            "experienced": "false",
+            "score": 0.9872964889123228
+        },
+        {
+            "name": "Kathlin",
+            "age": "22",
+            "latitude": "43.6158299",
+            "longitude": "13.518915",
+            "monthly income": "5131",
+            "experienced": "false",
+            "score": 0.9866386464725011
+        },
+        {
+            "name": "Neils",
+            "age": "25",
+            "latitude": "44.4410356",
+            "longitude": "18.1173229",
+            "monthly income": "5167",
+            "experienced": "false",
+            "score": 0.9862609273273553
+        }
+    ]
 }
 ```
 
